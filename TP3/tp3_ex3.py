@@ -24,12 +24,12 @@ file.close();
 tokenizer = PunktSentenceTokenizer();
 tokens = tokenizer.tokenize(content);
 
-words = ()
-tagged = ()
-namedEnt = ()
+words = []
+tagged = []
+namedEnt = []
 
 for sentence in tokens:
-  print(sentence)
+  # print(sentence)
   words += nltk.word_tokenize(sentence)
   tagged = nltk.pos_tag(words)
   #Named Entity Recognition
